@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+===========================================
+Trivia Quiz App
+===========================================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple quiz application built with React that fetches trivia questions from the Open Trivia Database API. Users can select a category, difficulty level, and answer questions interactively.
 
-## Available Scripts
+===========================================
+Features
+===========================================
 
-In the project directory, you can run:
+1. Home Page
+   - Displays a form with:
+     - User's name (text input)
+     - Trivia category (dropdown menu with multiple options)
+     - Difficulty level (dropdown: Easy, Medium, Hard)
+   - Validates all fields to ensure completion before proceeding.
+   - Displays error messages for invalid inputs.
 
-### `npm start`
+2. Question Form
+   - Dynamically fetches a trivia question based on user preferences.
+   - Displays the question and multiple-choice answers using radio buttons.
+   - Validates that an answer is selected before submission.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Results Section
+   - Feedback on whether the user's answer was correct.
+   - Displays the correct answer if the user was incorrect.
+   - Allows users to restart the quiz.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. API Integration
+   - Fetches trivia questions from the Open Trivia Database API.
 
-### `npm test`
+===========================================
+Technologies Used
+===========================================
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React: For building the UI and managing state.
+- CSS: For styling the application.
+- Open Trivia Database API: For fetching trivia questions.
 
-### `npm run build`
+===========================================
+Folder Structure
+===========================================
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+quiz-app/
+│
+├── src/
+│   ├── components/
+│   │   ├── Home.js           # Home page component
+│   │   ├── QuestionForm.js   # Question form component
+│   │   ├── Results.js        # Results display component
+│   ├── App.js                # Main application component
+│   ├── index.js              # Entry point
+│   └── App.css               # Styling for the application
+│
+├── package.json              # Dependencies and scripts
+└── README.txt                # Project documentation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+===========================================
+Setup Instructions
+===========================================
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Install Node.js
+   - Ensure Node.js and npm are installed.
+   - Check versions:
+     ```
+     node -v
+     npm -v
+     ```
 
-### `npm run eject`
+2. Clone the Repository
+   - Navigate to your desired folder and clone the repository:
+     ```
+     git clone <repository_url>
+     ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install Dependencies
+   - Navigate to the project folder and run:
+     ```
+     npm install
+     ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Run the Development Server
+   - Start the development server:
+     ```
+     npm start
+     ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Open the Application
+   - In your browser, navigate to:
+     ```
+     http://localhost:3000
+     ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+===========================================
+Usage Instructions
+===========================================
 
-## Learn More
+1. On the Home Page:
+   - Enter your name.
+   - Choose a category and difficulty level.
+   - Click "Start Quiz."
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. On the Question Page:
+   - Read the question and choose an answer.
+   - Submit your answer to see if it's correct.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. On the Results Page:
+   - View feedback and the correct answer (if applicable).
+   - Restart the quiz by clicking "Start Over."
 
-### Code Splitting
+===========================================
+API Information
+===========================================
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Base URL: https://opentdb.com/api.php?amount=1&category=18&difficulty=medium&type=multiple
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+===========================================
+Known Issues
+===========================================
 
-### Making a Progressive Web App
+- API may return a "429 Too Many Requests" error if overloaded. To resolve this, reduce the frequency of requests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+===========================================
+Future Enhancements
+===========================================
 
-### Advanced Configuration
+- Add a timer for each question.
+- Include support for true/false question types.
+- Improve mobile responsiveness.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+===========================================
+Author
+===========================================
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This application was created for Coding Temple's weekly assignment.
