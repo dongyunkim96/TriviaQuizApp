@@ -1,12 +1,12 @@
-===========================================
-Trivia Quiz App
-===========================================
+===========================================</br>
+Trivia Quiz App</br>
+===========================================</br>
 
 A simple quiz application built with React that fetches trivia questions from the Open Trivia Database API. Users can select a category, difficulty level, and answer questions interactively.
 
-===========================================
-Features
-===========================================
+===========================================</br>
+Features</br>
+===========================================</br>
 
 1. Home Page
    - Displays a form with:
@@ -29,35 +29,35 @@ Features
 4. API Integration
    - Fetches trivia questions from the Open Trivia Database API.
 
-===========================================
-Technologies Used
-===========================================
+===========================================</br>
+Technologies Used</br>
+===========================================</br>
 
 - React: For building the UI and managing state.
 - CSS: For styling the application.
 - Open Trivia Database API: For fetching trivia questions.
 
-===========================================
-Folder Structure
-===========================================
+===========================================</br>
+Folder Structure</br>
+===========================================</br>
 
-quiz-app/
-│
-├── src/
-│   ├── components/
-│   │   ├── Home.js           # Home page component
-│   │   ├── QuestionForm.js   # Question form component
-│   │   ├── Results.js        # Results display component
-│   ├── App.js                # Main application component
-│   ├── index.js              # Entry point
-│   └── App.css               # Styling for the application
-│
-├── package.json              # Dependencies and scripts
-└── README.txt                # Project documentation
+quiz-app/</br>
+│</br>
+├── src/</br>
+│   ├── components/</br>
+│   │   ├── Home.js           # Home page component</br>
+│   │   ├── QuestionForm.js   # Question form component</br>
+│   │   ├── Results.js        # Results display component</br>
+│   ├── App.js                # Main application component</br>
+│   ├── index.js              # Entry point</br>
+│   └── App.css               # Styling for the application</br>
+│</br>
+├── package.json              # Dependencies and scripts</br>
+└── README.txt                # Project documentation</br>
 
-===========================================
-Setup Instructions
-===========================================
+===========================================</br>
+Setup Instructions</br>
+===========================================</br>
 
 1. Install Node.js
    - Ensure Node.js and npm are installed.
@@ -91,9 +91,9 @@ Setup Instructions
      http://localhost:3000
      ```
 
-===========================================
-Usage Instructions
-===========================================
+===========================================</br>
+Usage Instructions</br>
+===========================================</br>
 
 1. On the Home Page:
    - Enter your name.
@@ -108,29 +108,23 @@ Usage Instructions
    - View feedback and the correct answer (if applicable).
    - Restart the quiz by clicking "Start Over."
 
-===========================================
-API Information
-===========================================
+===========================================</br>
+API Information</br>
+===========================================</br>
 
 - Base URL: https://opentdb.com/api.php?amount=1&category=18&difficulty=medium&type=multiple
 
 
-===========================================
-Known Issues
-===========================================
+===========================================</br>
+Known Issues</br>
+===========================================</br>
 
 - API may return a "429 Too Many Requests" error if overloaded. To resolve this, reduce the frequency of requests.
 
-===========================================
-Future Enhancements
-===========================================
+===========================================</br>
+Future Enhancements</br>
+===========================================</br>
 
 - Add a timer for each question.
 - Include support for true/false question types.
 - Improve mobile responsiveness.
-
-===========================================
-Author
-===========================================
-
-This application was created for Coding Temple's weekly assignment.
